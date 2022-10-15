@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #222;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(48, 46, 46);
+    border: 1px solid green;
+    border-radius: 10px;
+    box-shadow: 0 0 15px green;
+}
+.typing-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message{
+    font-size: 40px;
+    border-radius: 10px;
+    border: 1px solid green;
+    box-shadow: 0 0 15px green;
+    transition: 1s;
+}
+#message:focus{
+    box-shadow: 0 0 15px green;
+    outline: 4px solid green;
+    background-color: #222;
+    color: #fff;
+}
+#submit{
+    background-color: yellowgreen;
+    font-size: 40px;
+    border-radius: 10px;
+    border: 1px solid #222;
+    box-shadow: 0 0 15px #222;
+    transition: 1s;
+    margin-left: 10px;
+}
+#submit:focus{
+    box-shadow: 0 0 15px 222;
+    outline: 4px solid 222;
+    background-color: yellow;
+}
+.chat-window{
+    background-color: #222;
+    width: 90%;
+    height: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px solid green;
+    box-shadow: 0 0 15px green;
+    color: #fff;
+}
+ul{
+    padding: 10px;
+    list-style-type: none;
+    font-size: 20px;
+}
+label{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 20px;
+
+}
