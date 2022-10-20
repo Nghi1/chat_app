@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="main-2">
+                <div class="chat-window">
+                <ul id="person"></ul>
+            </div>
+            <div class="typing-field">
+                <label id="profile"></label>
+                <input type="text" id="message"/>
+                <a href="#" style="--clr:#6eff3e" onclick="send()"><span>Send</span><i></i></a>
+                    <div class="battery">
+                        <div class="battery-body">
+                            <div class="battery-changed"></div>
+                        </div>
+                        <h3 class="current-time" id="current-time"></h3>
+                    </div>    
+            </div>
+            </div>
+        </div>
+        <div class="bubbles">
+           <span style="--i:11"></span>
+           <span style="--i:12"></span>
+           <span style="--i:24"></span>
+           <span style="--i:10"></span>
+           <span style="--i:14"></span>
+           <span style="--i:23"></span>
+           <span style="--i:18"></span>
+           <span style="--i:16"></span>
+           <span style="--i:19"></span>
+           <span style="--i:20"></span>
+           <span style="--i:22"></span>
+           <span style="--i:25"></span>
+           <span style="--i:18"></span>
+           <span style="--i:21"></span>
+           <span style="--i:15"></span>
+           <span style="--i:13"></span>
+           <span style="--i:26"></span>
+           <span style="--i:17"></span>
+           <span style="--i:13"></span>
+           <span style="--i:28"></span>
+           <span style="--i:11"></span>
+           <span style="--i:12"></span>
+           <span style="--i:24"></span>
+           <span style="--i:10"></span>
+           <span style="--i:14"></span>
+           <span style="--i:23"></span>
+           <span style="--i:18"></span>
+           <span style="--i:16"></span>
+           <span style="--i:19"></span>
+           <span style="--i:20"></span>
+           <span style="--i:22"></span>
+           <span style="--i:25"></span>
+           <span style="--i:18"></span>
+           <span style="--i:21"></span>
+           <span style="--i:15"></span>
+           <span style="--i:13"></span>
+           <span style="--i:26"></span>
+           <span style="--i:17"></span>
+           <span style="--i:13"></span>
+           <span style="--i:28"></span>
+        </div>
+    </div>
+    <script>
+        let time=document.getElementById("current-time"); 
+        setInterval(()=>{
+             let ontime= new Date();
+             time.innerHTML= ontime.toLocaleTimeString();
+        },1000)
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
